@@ -13,8 +13,6 @@ RUN useradd -m -g wheel -d /home/dev dev && sed -i -e 's/# %wheel/%wheel/g' /etc
 
 RUN su - dev -c "curl -sLf https://spacevim.org/install.sh | bash"
 
-COPY init.toml /home/dev/.SpaceVim.d/init.toml
-
 USER dev
 
 WORKDIR /home/dev
