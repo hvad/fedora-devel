@@ -30,9 +30,6 @@ USER dev
 # Set the working directory
 WORKDIR /home/dev
 
-# Install SpaceVim
-RUN curl -sLf https://spacevim.org/install.sh | bash
-
 # Optional: Install additional Python packages globally
 RUN pip3 install --upgrade pip setuptools wheel
 
